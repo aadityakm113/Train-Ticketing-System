@@ -1,0 +1,94 @@
+{% load static %}	
+<!doctype html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <title>Hello, world!</title>
+   
+
+</head>
+<body>
+
+	<div class="container">
+		
+			<!--<div class="col-md-12 text-center">
+
+	    			<h1>Login</h1>
+
+	 		</div>
+	 		<div class="loginDiv col-md-6" border>
+		 		
+				  <div class="form-group">
+				    <label>User Name</label>
+				    <input type="text" class="form-control" name="user_nameF">
+				    
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" class="pwdF">
+				  </div>
+				  <div class="form-group form-check">
+				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+				  </div>
+				  <button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+			<fieldset></fieldset></dform>
+				 		
+	  			<div class=""	>
+	  				<div class="form-group">
+
+                        <p class="text-center">Don't have account? <a href="#" class="signup">Sign up here</a></p>
+                	</div>-->
+            		
+               		 <form action="/new/" method="POST">
+						{% csrf_token %}	
+                	 <div class="RegisDiv col-md-6">
+		 				<div class="myform form ">
+      
+	                		<div class="col-md-12 text-center">
+	 
+	                         	<h1 >Signup</h1>   
+	               		 	</div>
+						  <div class="form-group">
+						    <label>User Name</label>
+						    <input type="text" class="form-control" name="user_nameF">
+						    
+						  </div>
+						 
+						  <div class="form-group">
+						    <label>Email ID</label>
+						    <input type="text" class="form-control" name="emailF">
+						    
+						  </div>
+						   <div class="form-group">
+						    <label>Password</label>
+						    <input type="text" class="form-control" name="pwdF">
+						  </div>
+						  
+						  <button type="submit" class="btn btn-primary">Submit</button>
+				       </div>
+			    </div>	
+			   </div>
+			 </form>
+		</div>
+		<!--<script src="{% static 'js/bootstrap.min.js' %}</script>
+		<script src="{% static 'js/jquery.min.js' %}</script>
+		<script> 
+            $(document).ready(function() { 
+                $(".signup").click(function() { alert("sdf")
+                    $("RegisDiv").removeClass(".d-none"); 
+                }); 
+            }); 
+        </script> -->
+	
+
+
+
+
+               
+				    
+  		  </form>
+  		 </div>
+  	</body><</form></div></body></html>
